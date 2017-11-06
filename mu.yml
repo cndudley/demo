@@ -1,0 +1,13 @@
+namespace: mu
+environments:
+- name: acceptance
+- name: production
+service:
+  name: demo
+  port: 80
+  pathPatterns:
+  - /*
+  pipeline:
+    source:
+      provider: GitHub
+      repo: cndudley/demo
